@@ -19,12 +19,6 @@ for (let i = 0; i < questions.length; i++) {
       questions[i].classList.add("active");
       arrow[i].classList.remove("down");
       arrow[i].classList.add("up");
-    } else if (questions[i].classList.contains("active")) {
-      answers[i].classList.remove("open");
-      answers[i].classList.add("closed");
-      questions[i].classList.remove("active");
-      arrow[i].classList.remove("up");
-      arrow[i].classList.add("down");
     }
   });
 }
